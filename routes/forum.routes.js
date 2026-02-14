@@ -10,6 +10,7 @@ import {
   getNewestQuestions,
   getFollowingQuestions,
   getOldNotifications,
+  getNews
 } from "../controllers/forum/index.js";
 
 import isLoggedIn from "../middlewares/isLoggedIn.middleware.js";
@@ -20,6 +21,7 @@ const forumRouter = express.Router();
 const upload = multer();
 
 forumRouter
+  .get("/news", getNews)
   .get("/posts/popular", getPopularQuestions)
   .get("/posts/recent", getNewestQuestions);
 

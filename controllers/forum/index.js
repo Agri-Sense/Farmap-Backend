@@ -1,4 +1,5 @@
 import follow from "./follow.controller.js";
+import getNews from "./getNews.controller.js";
 import addQuestion from "./addQuestion.js";
 import addAnswer from "./addAnswer.js";
 import { downVoteQuestion, upVoteQuestion } from "./voteQuestion.js";
@@ -21,4 +22,5 @@ export {
   getNewestQuestions,
   getFollowingQuestions,
   getOldNotifications,
+  getNews
 };
